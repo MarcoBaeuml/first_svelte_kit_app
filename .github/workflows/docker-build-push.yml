@@ -19,4 +19,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: docker.baeuml.io/svelteKit
+          tags: docker.baeuml.io/svelte_kit
