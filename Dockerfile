@@ -11,4 +11,4 @@ COPY . .
 RUN yarn build
 RUN npx prisma generate
 
-CMD node build
+CMD ORIGIN=http://localhost:3000 node build
