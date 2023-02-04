@@ -1,4 +1,4 @@
-FROM node:19-alpine
+FROM node:19
 
 WORKDIR /app
 
@@ -9,5 +9,6 @@ RUN yarn
 COPY . .
 
 RUN yarn build
+RUN npx prisma generate
 
 CMD node build
